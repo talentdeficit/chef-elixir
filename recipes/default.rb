@@ -23,6 +23,8 @@
 
 include_recipe "build-essential"
 include_recipe "git"
+
+node.override['erlang']['releases'] = []
 include_recipe "erlang"
 
 version = node['elixir']['elixir_git_ref']

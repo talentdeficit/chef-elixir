@@ -27,5 +27,3 @@ default['elixir']['otp_git_url'] = "https://github.com/erlang/otp"
 default['elixir']['otp_git_ref'] = "OTP_R16B"
 
 default['elixir']['config_flags'] = [""]
-
-set['erlang']['releases'] = []
