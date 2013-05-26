@@ -48,4 +48,5 @@ cd #{cache_path}/elixir
 git checkout #{version}
 make && make install
 EOS
+  not_if { File.exists?("/usr/local/lib/elixir") }
 end
