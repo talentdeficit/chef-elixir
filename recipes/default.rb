@@ -24,7 +24,7 @@
 include_recipe "build-essential"
 include_recipe "git"
 
-node.override['erlang']['releases'] = []
+node.set['erlang']['releases'] = []
 include_recipe "erlang"
 
 version = node['elixir']['elixir_git_ref']
@@ -36,6 +36,7 @@ cache_path = Chef::Config['file_cache_path']
 
 erlang "#{otp_release}" do
   git_url otp_url
+  config_flags node['elixir']['config_flags']
 end
 
 git "elixir #{version}" do
