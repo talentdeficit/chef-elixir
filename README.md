@@ -14,12 +14,12 @@ the following attributes are available to override:
   the url of the git repo to clone elixir from
 * `elixir_git_ref`
   the git reference to checkout from the elixir git repo
-* `otp_git_url`
-  the url of the git repo to clone erlang from
-* `otp_git_ref`
-  the git reference to checkout from the otp git repo
-* `config_flags`
-  a list of flags to pass to the configure script for the erlang runtime
+
+this recipe installs a default erlang `R16B` release to `/usr/local` as long as there
+is not already an erlang release installed to that location. if you'd like to use elixir
+with a custom build erlang use the [erlang][chef-erlang] recipe to configure and install
+erlang before running this recipe. 
+
 
 ## license ##
 
@@ -44,3 +44,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+[chef-erlang]: https://github.com/talentdeficit/chef-erlang

@@ -37,6 +37,6 @@ supports "ubuntu"
 supports "suse"
 supports "mac_os_x"
 
-%w{ git erlang }.each do |cookbook|
+%w{ build-essential git erlang }.each do |cookbook|
   depends cookbook
 end

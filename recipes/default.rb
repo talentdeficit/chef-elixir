@@ -20,19 +20,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-
 include_recipe "build-essential"
 include_recipe "git"
-
-node.set['erlang']['releases'] = [
-  {"otp_git_url" => node['elixir']['otp_git_url'], "otp_git_ref" => node['elixir']['otp_git_ref']}
-]
 include_recipe "erlang"
 
 version = node['elixir']['elixir_git_ref']
-
-otp_url = node['elixir']['otp_git_url']
-otp_release = node['elixir']['otp_git_ref']
 
 cache_path = Chef::Config['file_cache_path']
 
