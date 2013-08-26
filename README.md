@@ -11,11 +11,11 @@ include `recipe[elixir]` in your `run_list`
 the following attributes are available to override:
 
 * `elixir_git_url`
-  the url of the git repo to clone elixir from
+  the url of the git repo to clone elixir from. the default is github.com/elixir-lang/elixir
 * `elixir_git_ref`
-  the git reference to checkout from the elixir git repo
+  the git reference to checkout from the elixir git repo. the default is v0.10.1
 
-this recipe installs a default erlang `R16B` release to `/usr/local` as long as there
+this recipe installs a default erlang release to `/usr/local` as long as there
 is not already an erlang release installed to that location. if you'd like to use elixir
 with a custom build erlang use the [erlang][chef-erlang] recipe to configure and install
 erlang before running this recipe. 
