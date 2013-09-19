@@ -13,7 +13,7 @@ the following attributes are available to override:
 * `elixir_git_url`
   the url of the git repo to clone elixir from. the default is github.com/elixir-lang/elixir
 * `elixir_git_ref`
-  the git reference to checkout from the elixir git repo. the default is v0.10.1
+  the git reference to checkout from the elixir git repo. the default is v0.10.2
 
 this recipe installs a default erlang release to `/usr/local` as long as there
 is not already an erlang release installed to that location. if you'd like to use elixir
