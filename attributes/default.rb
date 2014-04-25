@@ -21,4 +21,4 @@
 # THE SOFTWARE.
 
 default['elixir']['elixir_git_url'] = "https://github.com/elixir-lang/elixir"
-default['elixir']['elixir_git_ref'] = "v0.12.0"
+default['elixir']['elixir_git_ref'] = "v0.13.0"
