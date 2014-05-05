@@ -25,7 +25,7 @@ maintainer "alisdair sullivan"
 maintainer_email "alisdairsullivan@yahoo.ca"
 license "MIT"
 description "a chef recipe for installing elixir"
-version "0.1"
+version "0.9"
 
 supports "redhat"
 supports "centos"

@@ -22,6 +22,8 @@
 
 include_recipe "build-essential"
 include_recipe "git"
+
+node.set['erlang']['otp_git_ref'] = "17.0"
 include_recipe "erlang"
 
 version = node['elixir']['elixir_git_ref']
